@@ -1,0 +1,443 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #01bdc6;  /* fallback for old browsers */
+}
+
+header{
+	align-items: center;
+	background-color: #008096;
+}
+
+.logo{
+	width: 150px;
+}
+
+.navBar{
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dempet{
+	width: 80%;
+	margin-left: 230px;
+}
+
+header span
+{
+	padding: 15px 100px;
+}
+
+header span a{
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+header span a:hover
+{
+	color: orange;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.flex-col{
+	flex-direction: column;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid rgb(77, 19, 154, 0.3);
+    top: 100%;
+    left: 95px;
+    width: 170px;
+    z-index: 1;
+    background-color: #3a5780;
+    padding: 0px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.color-nav{
+	background-color: #204d7f;
+}
+
+.alignCenter{
+	text-align: center;
+}
+
+main{
+	width: 100%;
+	height: 33.1vw;
+	background-color: #01bdc6;
+}
+
+main h1{
+	padding: 10px 0;
+	font-family: helvetica;
+	font-size: 36px;
+	text-align: center;
+	color: white;
+}
+
+.mid{
+	/*background-color: black;*/
+	height: 83%;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.ppl1{
+	width: 250px;
+	height: 250px;
+	margin-bottom: -395px;
+	margin-left: 2vw;
+}
+
+.ppl2{
+	width: 250px;
+	height: 250px;
+	margin-top: 125px;
+}
+
+.vote-part{
+	display: inline-block;
+	text-align: left;
+	/*background-color: gold;*/
+	width: 55%;
+	height: 390px;
+}
+
+.vote-part-text{
+	display: flex;
+	justify-content: space-between;
+}
+
+.voteimg{
+	display: flex;
+	justify-content: space-between;
+}
+
+.choose{
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.percentage{
+	margin-right: 37px;
+}
+
+.vote-part p{
+	color: white;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.vote-part input{
+	margin-top: 10px;
+}
+
+.votebar{
+	margin-bottom: 10px;
+}
+
+.votebar:hover{
+	transform: scale(1);
+	cursor: default;
+}
+
+.type{
+	border-radius: 10px;
+	width: 51.5vw;
+	height: 40px;
+	border: 2.4px solid white;
+	background-color: #01bdc6;
+	padding: 0 10px;
+	font-family: helvetica;
+	font-size: 16px;
+	color: white;
+}
+
+/*chrome*/
+::-webkit-input-placeholder{
+	color: white;
+}
+
+/*mozila*/
+:-moz-placeholder{
+	color: white;
+}
+
+/*internet explorer*/
+:-ms-input-placeholder{
+	color: white;
+}
+
+.button-container{
+	margin-top: 20px;
+	/*background-color: black;*/
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	height: 35px;
+}
+
+.button-container button{
+	border-radius: 10px;
+	background-color: grey;
+	border: none;
+	height: 100%;
+	width: 120px;
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+button:hover{
+	cursor: pointer;
+	/*background-color: #008096;*/
+}
+
+.under-button{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.under-button p{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.bgFooter{
+	background-color: #008096;
+	/*background-color: #295d97;*/
+}
+
+.borderHeader{
+	border-style: absolute;
+}
+
+.textStyle{
+	font-size: 20px;
+	color: white;
+	padding-top: 2vw;
+}
+
+.imageSize{
+	width: 60%;
+}
+
+.marginImg{
+	margin: 5vh;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.justifyCenter{
+	justify-content: center;
+}
+
+.flexCol{
+	flex-direction: column;
+}
+
+.nav-list:hover{
+	color: white;
+	background-color: black;
+}
+
+.sosmed{
+	width: 20vw;
+}
+
+.icon{
+	display: inline-block;
+	width: 50px;
+	height: 35px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 12vw;
+	margin-top: 10px;
+	opacity: 1;
+}
+.icon-text{
+	display: flex;
+	align-items: center;
+}
+
+.text{
+	color: lightblue;
+	margin-left: 10px;
+}
+
+.text h1{
+	font-size: 24px;
+}
+
+.text a{
+	font-size: 20px;
+}
+
+.marginFooter{
+	margin-left: 50vw;
+}
+
+.color-white{
+	color: white;
+}
+
+.about{
+	margin-top: -1vh;
+	margin-right: 12vw;
+}
+
+.about h1{
+	color: white;
+	font-size: 24px;
+}
+
+.about p{
+	color: lightblue;
+	width: 25vw;
+	text-align: justify;
+}
+
+.social-media img{
+	width: 30px;
+	opacity: 80%;
+}
+
+.copyright h4{
+	margin-top: 170px;
+	color: lightblue;
+}
+
+footer {
+    /*background-color: #008096;*/
+    background-color: #295d97;
+    /*height: 100px;*/
+    height: 20vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    justify-content: space-around;
+}
+
+footer p{
+	font-size: 18px;
+}
+
+/*radio button*/
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  margin-top: 1vh;
+  margin-right: 1vw;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #295d97;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.result-bar {
+	position: absolute;
+    display: flex;
+    height: 40px;
+    min-width: 5%;
+    background: linear-gradient(to right,#01bdc6,#dca159,#df2550,#234c7e);
+    border-radius: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    max-width: 51.2vw;
+    margin-top: 2px;
+    margin-left: 2px;
+}

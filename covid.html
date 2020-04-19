@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./covid.css">
+	<title>COVID-19</title>
+
+</head>
+<body>
+	<!-- <iframe src="./assets/Mysterious-Guitars-long-version.mp3" allow="autoplay" style="display: none;"></iframe>
+	<audio autoplay loop id="bgm">
+		<source src="./assets/Mysterious-Guitars-long-version.mp3" type="audio/mpeg">
+	</audio> -->
+	<audio id="info1">
+		<source src="./assets/tts/info1.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="info2">
+		<source src="./assets/tts/info2.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="info3">
+		<source src="./assets/tts/info3.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="mapv">
+		<source src="./assets/tts/map.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="contagionSound">
+		<source src="./assets/tts/contagion.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="symptomsSound">
+		<source src="./assets/tts/symptoms.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="prevent1">
+		<source src="./assets/tts/prevent1.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="prevent2">
+		<source src="./assets/tts/prevent2.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="prevent3">
+		<source src="./assets/tts/prevent3.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="prevent4">
+		<source src="./assets/tts/prevent4.mp3" type="audio/mpeg">
+	</audio>
+
+	<div class="loader-wrapper" style="color: white; text-align: center;justify-content: center;">
+		<h2>LOADING PAGE</h2>
+	</div>
+
+	<div class="intro">
+		<p style="color: lightgrey; text-align: center;">scroll down. slowly.<br>for better experience.</p>
+		<ul id="prlx1" class="sceneIntro">
+			<li data-depth=".4">
+				<h1 class="title">COVID-19</h1>
+			</li>
+			<li data-depth="-1">
+				<img src="assets/scene1/1.png">
+			</li>
+			<li data-depth="1" style="z-index: -1; filter: contrast(80%); opacity: 50%">
+				<img src="assets/scene1/2.png">
+			</li>
+			<li data-depth="-1">
+				<img src="assets/scene1/3.png">
+			</li>
+			<li data-depth="2" style="z-index: -1; filter: contrast(90%); opacity: 60%">
+				<img src="assets/scene1/4.png">
+			</li>
+			<li data-depth="-0.5" style="z-index: 1;">
+				<br>
+				<br>
+				<img src="assets/scene1/5.png">
+			</li>
+		</ul>
+
+	</div>
+	<!-- ok -->
+	<div id="t1"></div>
+	
+	<div class="animation">
+		<img class="virus" src="assets/covid single.svg">
+		<h1 id="info-one">
+			<span style="color: lightgrey">COVID-19</span> is an infectious disease caused by a <span style="color: lightgrey">newly discovered</span> coronavirus.
+			<img class="tts-icon" onclick="playInfo1()" src="./assets/tts.png">
+		</h1>
+		<h1 id="info-two">
+			Most people infected with the <span style="color: lightgrey">COVID-19</span> virus will experience mild to moderate <span style="color: lightgrey">respiratory illness</span> and recover without special treatment.
+			<img class="tts-icon" onclick="playInfo2()" src="./assets/tts.png">
+		</h1>
+		<h1 id="info-three">
+			But <span style="color: lightgrey">older people</span> and those with <span style="color: lightgrey">underlying medical problems</span> are likely to develop serious illness.
+			<img class="tts-icon" onclick="playInfo3()" src="./assets/tts.png">
+		</h1>
+		
+		
+	</div>
+	<!-- ok -->
+	<div id="t2"></div>
+
+	<div>
+		<div class="map">
+			<h1 id="text-one">
+				COVID-19 has been spreading since<br>November 19th, 2019
+			</h1>
+			<h1 id="text-two" class="next-text">
+				. . .but was first confirmed by China<br>on December 31st, 2019
+			</h1>
+			<h1 id="text-three" class="next-text">
+				. .until today, it has infected<br>about 210 countries.
+			</h1>
+			<img src="assets/scene3/gmap.png">
+			<div class="warn">
+				<img id="warn1" src="assets/scene3/1.png">
+				<img id="warn2" src="assets/scene3/2.png">
+				<img id="warn3" src="assets/scene3/3.png">
+				<img id="warn4" src="assets/scene3/4.png">
+				<img id="warn5" src="assets/scene3/5.png">
+				<img id="warn6" src="assets/scene3/6.png">
+				<img id="warn7" src="assets/scene3/7.png">
+				<img id="warn8" src="assets/scene3/8.png">
+				<img id="warn9" src="assets/scene3/9.png">
+				<img id="warn10" src="assets/scene3/10.png">
+				<img id="warn11" src="assets/scene3/11.png">
+				<img id="warn12" src="assets/scene3/12.png">
+				<img id="warn13" src="assets/scene3/13.png">
+				<img id="warn14" src="assets/scene3/14.png">
+				<img id="warn15" src="assets/scene3/15.png">
+				<img id="warn16" src="assets/scene3/16.png">
+				<img id="warn17" src="assets/scene3/17.png">
+				<img id="warn18" src="assets/scene3/18.png">
+				<img id="warn19" src="assets/scene3/19.png">
+				<img id="warn20" src="assets/scene3/20.png">
+				<img id="warn21" src="assets/scene3/21.png">
+				<img id="warn22" src="assets/scene3/22.png">
+			</div>
+			<img class="tts-icon" onclick="playMap()" src="./assets/tts.png" style="margin-left:60vw; margin-top: 45vh;">
+		</div>
+		<!-- ok -->
+	</div>
+	<div id="t3"></div>
+	<div class="horizontal">
+		
+		<div class="covid-think">
+			<img id="cloud" src="assets/scene4n5/cloud.png">
+			<h2 id="cloud-text">
+				CONTAGION
+				<br>
+				<img class="tts-icon" onclick="playContagion()" src="./assets/tts.png">
+			</h2>
+			<img id="thinking" src="assets/scene4n5/thinking.png">
+			<ul id="contagion">
+				<li data-depth="0.5">
+					<img src="assets/scene4n5/contagion1.png">
+				</li>
+				<li data-depth="1">
+					<img src="assets/scene4n5/contagion2.png">
+				</li>
+				<li data-depth="-0.5">
+					<img src="assets/scene4n5/contagion3.png">
+				</li>
+				<li data-depth="-1">
+					<img src="assets/scene4n5/contagion4.png">
+				</li>
+			</ul>
+		</div>
+		<div class="covid-shock">
+			<img id="cloud2" src="assets/scene4n5/cloud.png">
+			<h2 id="cloud-text2">
+				SYMPTOMS
+				<br>
+				<img class="tts-icon" onclick="playSymptoms()" src="./assets/tts.png">
+			</h2>
+			<img id="shock" style="opacity: 0" src="assets/scene4n5/shock.png">
+			<ul id="symptoms">
+				<li data-depth="-1">
+					<img src="assets/scene4n5/symptoms1.png">
+				</li>
+				<li data-depth="0.5">
+					<img src="assets/scene4n5/symptoms2.png">
+				</li>
+				<li data-depth="1">
+					<img src="assets/scene4n5/symptoms3.png">
+				</li>
+				<li data-depth="-0.5">
+					<img src="assets/scene4n5/symptoms4.png">
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="t4"></div>
+
+	<div class="scene6">
+		<h1 id="preHeader">HOW TO PREVENT IT?</h1>
+	
+		<div id="prevention4" class="prevention">
+			<img class="preimg" src="assets/scene6/12.png">
+			<p>
+				Cover when you cough or sneeze to prevent disease transmission through bodily fluid.
+				<img class="tts-pre" onclick="playPrevent1()" src="./assets/tts.png">
+			</p>
+			
+		</div>
+		<div id="prevention3" class="prevention">
+			<img class="preimg" style="margin-top: -15vh" src="assets/scene6/11.png">
+			<p style="margin-right: -99vw;">
+				Avoid large crowd if possible to minimize physical contact, especially towards people who are showing the symptoms.
+				<img class="tts-pre" onclick="playPrevent2()" src="./assets/tts.png">
+			</p>
+			
+		</div>
+		<div id="prevention2" class="prevention">
+			<img class="preimg" style="margin-top: -15vh" src="assets/scene6/10.png">
+			<p style="margin-right: -99vw;">
+				Wear mask when you go to public places to prevent disease transmition. A surgical mask or fabric mask with tissue layer is enough.
+				<img class="tts-pre" onclick="playPrevent3()" src="./assets/tts.png">
+			</p>
+			
+		</div>
+		<div id="prevention1" class="prevention">
+			<img class="preimg" style="margin-top: -15vh" src="assets/scene6/9.png">
+			<p style="margin-right: -99vw;">
+				Stay clean! Wash your body, especially your hands. Do NOT touch your face with dirty hands.
+				<img class="tts-pre" style="margin-left: 32vw;" onclick="playPrevent4()" src="./assets/tts.png">
+			</p>
+			
+		</div>
+	</div>
+	
+	<div id="t5"></div>
+
+	<div class="scene7">
+		<h1 id="lastHeader" style="padding-top: 10vh;">WE STAY AT WORK FOR YOU,</h1>
+		<h1 id="lastHeader">YOU STAY AT HOME FOR US.</h1>
+		
+		<p id="lastP">Let's stop the spreading!<p>
+
+		<img style="width: 55vw; margin-top: -7vh;" src="assets/scene7/final.png">
+		<p style="color: grey; text-align: left;">...and thanks to freepik, flaticon, and artists whose amazing art we use to make this website. Please email us for copyright issue. <a href="index.html" style="font-weight: bold; color: salmon;">Click here to go back home.</a></p>
+	</div>
+
+	
+
+	<script src="assets/JavaScript/GSAP-2.1.2/src/uncompressed/TweenLite.js"></script>
+	<script src="assets/JavaScript/GSAP-2.1.2/src/uncompressed/TimelineLite.js"></script>
+	<script src="assets/JavaScript/GSAP-2.1.2/src/uncompressed/plugins/CSSPlugin.js"></script>
+	<script src="assets/JavaScript/GSAP-2.1.2/src/uncompressed/plugins/BezierPlugin.js"></script>
+	<script src="assets/JavaScript/parallax.js"></script>
+	<script src="assets/JavaScript/GSAP-2.1.2/src/uncompressed/TweenMax.js"></script>
+	<script src="assets/JavaScript/GSAP-2.1.2/src/uncompressed/TimelineMax.js"></script>
+	<script src="assets/JavaScript/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script src="assets/JavaScript/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+	<script src="assets/JavaScript/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script src="assets/JavaScript/jquery-3.4.1.min.js"></script>
+	<script src="covid.js"></script>
+	<script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
+</body>
+</html>
