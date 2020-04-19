@@ -228,8 +228,9 @@
 .prevention{
 	width: 40vw;
 	image-rendering: crisp-edges;
-	padding-left: 5vw;
-	margin-top: -90vh;
+	position: absolute;
+	left: 5vw;
+	top: -90vh;
 }
 
 .prevention .preimg{
